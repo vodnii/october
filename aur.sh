@@ -2,10 +2,12 @@
  echo "Установка yaourt в Arch Linux."
  echo "---@---@---@---@---@---@---@---"
  echo "Устанавливаем дополнительные зависимости и используя репозиторий AUR скачиваем и собираем package-query, а затем yaourt."
+ echo " Нажми SPACE"
   read item
- case "$item" in
+  case "$item" in
+       space)
        ;;
- esac
+  esac
 sudo pacman -S --needed base-devel git wget yajl
 cd /tmp
 git clone https://aur.archlinux.org/package-query.git
@@ -19,8 +21,12 @@ cd ..
 sudo rm -dR yaourt/ package-query/
  echo "---@---@---@---@---@---@---@---"
  echo "screenfetch"
- read item
- case "$item" in
-      ;;
- esac
+ echo " Нажми SPACE"
+  read item
+  case "$item" in
+       space)
+       ;;
+       *)
+       exit 0
+  esac
 screenfetch
