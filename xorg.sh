@@ -10,5 +10,5 @@
   esac
 sudo pacman -S xorg xorg-xinit xorg-apps mesa
 Xorg :0 -configure
-cp /root/xorg.conf.new /etc/X11/xorg.conf
+sudo cp /root/xorg.conf.new /etc/X11/xorg.conf
 screenfetch
