@@ -19,14 +19,4 @@ cd yaourt/
 makepkg -si
 cd ..
 sudo rm -dR yaourt/ package-query/
- echo "---@---@---@---@---@---@---@---"
- echo "screenfetch"
- echo " Нажми SPACE"
-  read item
-  case "$item" in
-       space)
-       ;;
-       *)
-       exit 0
-  esac
 screenfetch
