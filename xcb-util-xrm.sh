@@ -1,4 +1,4 @@
-
+#!/bin/bash
 cd ~/git
 git clone https://github.com/Airblader/xcb-util-xrm
 cd xcb-util-xrm
